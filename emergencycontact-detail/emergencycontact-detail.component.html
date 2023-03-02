@@ -1,30 +1,6 @@
 <div class="absolute inset-0 flex flex-col min-w-0 overflow-hidden">
 
-    <div class="flex flex-col sm:flex-row flex-0 sm:items-center sm:justify-between p-6 pb-22 sm:pt-12 sm:pb-28 sm:px-10 bg-default dark:bg-transparent">
-        <div class="flex-1 min-w-0">
-            <div>
-                <div class="flex">
-                    <a
-                        class="inline-flex items-center -ml-1.5 text-secondary font-medium"
-                        [routerLink]="'/all-membership'">
-                        <mat-icon
-                            class="icon-size-5 text-secondary"
-                            [svgIcon]="'heroicons_solid:chevron-left'"></mat-icon>
-                        <span class="ml-1">Back</span>
-                    </a>
-                </div>
-            </div>
-            <div class="mt-2">
-                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-7 sm:leading-10 truncate">
-                    Emergency Contact Detail
-                </h2>
-            </div>
-        </div>
-            <!-- Actions -->
-            <div class="flex shrink-0 items-center mt-6 sm:mt-0 sm:ml-4">
-                <button class="px-8" mat-raised-button color="primary"  aria-label="EditCount" type="button" *ngIf="updateBtn === true" (click)="clickEdit()">Edit</button>
-            </div>
-    </div>
+   
     <!--  -->
     <div *ngIf="updateBtn === true"  class="flex-auto -mt-16 p-6 sm:p-10 rounded-t-2xl shadow overflow-y-auto bg-card" cdkScrollable>
 
@@ -56,6 +32,9 @@
 
 
             </div>
+			<div>
+			<p>Faraz</p>
+			</div>
 
             <div class="grid sm:grid-cols-12 gap-6 w-full mt-8">
 
